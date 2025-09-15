@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva.com</title>
+    <link rel="stylesheet" href="css/stlye.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-container">
+                    <!-- Logo -->
+                    <div class="brand">
+                        <img src="img/Canva logo.svg" alt="" />
+                    </div>
+                    <div class="div">
+                        <ul class="nav-menu">
+                            <li><a href="">Design</a></li>
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Plans</a></li>
+                            <li><a href="">Business</a></li>
+                            <li><a href="">Education</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="button-sign">
+                        <a href=""><button class="sign-up">Sign up</button></a>
+                        <a href=""><button class="login">Log in</button></a>
+                    </div>
+                </div>
+        </nav>
+        <div class="h2-components">
+            <h2>What will you <br>
+            <span>design</span> today?</h2>
+            <p>With Canva you can design, generate, and work on anything</p>
+            <div class="button">
+                <button>Start designing</button>
+            </div>
+        </div>
+    </div>
+
+  <div class="slider">
+      <div class="slides" id="imagetrack">
+        <img src="img/2024 business poster.jpg" width="150px"  alt="">
+        <img src="img/images.jpg" width="150px" alt="">
+        <img src="img/conference poster.jpg" width="150px" alt="">
+        <img src="img/canva business flyer.jpg" width="150px" alt="">
+        <img src="img/photo poster.jpg" width="150px" alt="">
+        <img src="img/Dream big poster.jpg" width="150px" alt="">
+        <img src="img/dance poster.jpg" width="150px" alt="">
+        <img src="img/mordern flyer.jpg" width="150px" alt="">
+    </div>
+     <button class="arrow left">&#10094;</button>
+    <button class="arrow right">&#10095;</button>
+  </div>
+  
+  <script>
+    const slides = document.querySelector(".slides");
+    const images = document.querySelectorAll(".slides img");
+    const prevBtn = document.querySelector(".arrow.left");
+    const nextBtn = document.querySelector(".arrow.right");
+
+    let index = 0;
+
+    function showSlide() {
+      slides.style.transform = `translateX(${-index * 600}px)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % images.length;
+      showSlide();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + images.length) % images.length;
+      showSlide();
+    });
+  </script>
+    <div class="task">
+        <span>Make any task a breeze</span>
+        <p>from editing to organizing, these most-loved tools do the heavy lifting.</p>
+    </div>
+
+    <div class="div-class">
+        <div class="everyone">
+            <button class="every"><span>Everyone</span></button>
+            <button class="Marketing"><span>Marketing</span></button>
+            <button class="Sales"><span>Sales</span></button>
+            <button class="Small"><span>Small business</span></button>
+            <button class="Creatives"><span>Creatives</span></button>
+            <button class="Education"><span>Education</span></button>
+        </div>
+    </div>
+
+    <div class="instant">
+        <div class="pro-com">
+           <div class="pro-class">
+            <img src="img/icons8-crown-48.png" width="20px" alt="">
+            <span>Pro</span>
+           </div>
+           <div class="remove">
+            <span class="remove-ins">Instantly remove any background</span> <br>
+            <span class="backgrounds">Remove backgrounds in one click for products shots,protraits or posts</span>
+           </div>
+           <div class="button-learn">
+            <a href="#"><button>Learn More</button></a>
+           </div>
+        </div>
+        <div class="image">
+            <img src="img/image.png" alt="">
+        </div>
+    </div>
+
+    <div class="Canva-ai">
+        <div class="canva">
+            <img src="img/image copy.png" style="border-radius: 20px;" width="250px" alt="">
+             <div class="pro-class">
+            <img src="img/icons8-crown-48.png" width="15px" alt="">
+            <span>Pro</span>
+           </div>
+           <div class="ai">
+            <h2>Canva AI</h2>
+            <p>Use Canva AI to turn rough ideas into <br>
+            polished posts,slides, or docs</p>
+           </div>
+           <div class="btn-more">
+            <a href="#"><button>Learn More</button></a>
+           </div>
+        </div>
+        <div class="magic-eraser">
+            <img src="img/image copy 2.png" style="border-radius: 20px;" width="248px" alt="">
+               <div class="pro-class">
+            <img src="img/icons8-crown-48.png" width="15px" alt="">
+            <span>Pro</span>
+           </div>  
+             <div class="ai">
+            <h2>Magic Eraser</h2>
+            <p>Quickly erase anything unwanted <br>
+             from your images in just a few clicks.</p>
+           </div>
+            <div class="btn-more">
+            <a href="#"><button>Learn More</button></a>
+           </div>
+        </div>
+        <div class="magic-write">
+            <img src="img/image copy 3.png" style="border-radius: 20px;" width="248px" alt="">
+             <div class="pro-class">
+            <img src="img/icons8-crown-48.png" width="15px" alt="">
+            <span>Pro</span>
+           </div>
+            <div class="ai">
+            <h2>Magic Write</h2>
+            <p>Write fast with tools that help <br>
+                 you express ideas clearly, in your <br>
+                  own voice.</p>
+           </div>  
+           <div class="btn-more">
+            <a href="#"><button>Learn More</button></a>
+           </div> 
+        </div>
+        <div class="photo-editor">
+            <img src="img/image copy 4.png" style="border-radius: 20px;" width="248px" alt="">
+              <div class="pro-class">
+            <img src="img/icons8-crown-48.png" width="15px" alt="">
+            <span>Pro</span>
+           </div>
+             <div class="ai">
+            <h2>Photo Editor</h2>
+            <p>Click to adjust, crop, or clean up any <br>
+             photo — no design skills needed.</p>
+           </div> 
+              <div class="btn-more">
+            <a href="#"><button>Learn More</button></a>
+           </div>  
+        </div>
+    </div>
+
+    <div class="code">
+        <div class="design">
+            <h2>Design and code with AI</h2>
+            <p>Turn ideas into reality at the speed of conversation with the power of AI</p>
+        </div>
+        <div class="btn-design">
+            <a href="#"><button>Design with AI</button></a>
+        </div>
+        <div class="unlock">
+            <div class="unlock-possible">
+                <h3>Unlock possibilities with Canva Code</h3>
+                <span>Build interactive experinces, no coding required,and easily add <br>
+                them to any design</span>
+            </div>
+            <div class="meet-canva">
+                <h3>Meet Canva AI</h3>
+                <span>create,iterate,and refine with a creative partner to bring ideas <br>
+               to life effortlessly.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="perfect">
+        <h2 class="a-perfect">A perfect fit for everyone</h2>
+        <div class="canvafree">
+            <div class="for">
+                <div class="free">
+                     <div class="for-one">
+                    <span>For one person</span>
+                    </div>
+                      <div class="for-design">
+                        <h2>Canva Free</h2>
+                             <p class="design-of">For designing or working on anything.</p>
+                    </div>
+                    <div class="div-btn">
+                        <a href="#"><button>Get Canva Free</button></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="canvapro">
+                 <div class="free">
+                     <div class="for-one">
+                    <span>For one person</span>
+                    </div>
+                      <div class="for-design">
+                        <h2>Canva Free</h2>
+                         <p class="design-of">
+                              For growing your brand or passion <br>
+                         project with premium features.</p>
+                    </div>
+                    <div class="div-btn">
+                        <a href="#"><button>Get Canva Free</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="canvateam">
+                <div class="free">
+                     <div class="for-one">
+                    <span>For one person</span>
+                    </div>
+                      <div class="for-design">
+                        <h2>Canva Free</h2>
+                         <p class="design-of">
+                              For teams to create together with <br>
+                               premium workplace tools and <br> workflows.</p>
+                    </div>
+                    <div class="div-btn">
+                        <a href="#"><button>Get Canva Free</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="pricing">
+        <p>Our</p><a href="#"><span>pricing page</span></a><p>has full details.</p><span><a href="#">Educational organizations</a></span>
+        <p>and</p><span><a href="#">nonprofits</a></span><p>can enjoy premium Canva features for free</p>
+    </div>
+    </div>
+
+    <div class="templates">
+        <div class="templates-for">
+            <h2>Templates for absolutely anything</h2>
+            <p>Customize an office template, or design something more personal, like an invitation.</p>
+        </div>
+    </div>
+      <div class="pre-order-images">
+            <div class="three-images">
+                <img src="img/image copy 5.png" width="180px"  alt="">
+                <img src="img/image copy 6.png" width="180px" alt="">
+                <img src="img/employee poster.jpg" width="180px" alt="">
+            </div>
+            <div class="video-img">
+                <video controls autoplay loop> <source src="video/PinDown.io_@raisemybusines_1757426657.mp4"></video>
+                <img src="img/Heart  ❤️  Hands.jpg" width="120px"  alt="">
+                <img src="img/How To Teach Japanese To Kids.jpg" width="150px" height="150px" alt="">              
+            </div>
+            <div class="img-row">
+                <img src="img/Taking control of your future starts with a clear….jpg"alt="">
+                <img src="img/Taking control of your future starts with a clear….jpg"  alt="">
+                <img src="img/photo poster.jpg" alt="">
+            </div>
+            <div class="commitment">
+                <img src="img/Copy of Seminar Event Flyer _ PosterMyWall.jpg" alt="">
+                <img src="img/dance poster.jpg" alt="">
+                <img src="img/Dream big poster.jpg" alt="">
+                <img src="img/Percentages - An Introduction _ SkillsYouNeed.jpg" alt="">
+            </div>
+            <div class="all-new">
+                <img src="img/digital.jpg" width="190px" alt="">
+                <img src="img/….jpg" width="190px" alt="">
+                <img src="img/protrait.jpg" width="200px" alt="">
+            </div>
+            <div class="second-video">
+                <video controls autoplay loop> <source src="video/PinDown.io_@raisemybusines_1757426657.mp4"></video>
+                <img src="img/… (2).jpg" alt="">
+                <img src="img/premium.jpg" alt="">
+                <video controls autoplay loop> <source src="video/PinDown.io_@raisemybusines_1757426657.mp4"></video>
+                <img src="img/Copy of Seminar Event Flyer _ PosterMyWall.jpg" alt="">
+            </div>
+        </div>
+        <div class="second-btn">
+            <a href="#"><button class="Start">Start designing</button></a>
+            <a href="#"><button class="Browse-all">Browse all templates</button></a>
+        </div>
+        <div class="new-design">
+            <div class="your-new">
+                <h2>Your new design <br>
+                hereos are here</h2>
+                <p>Unleash your creative superpowers with <br>
+                templates featuring iconic characters from the <br>
+            Marvel Universe.</p>
+            </div>
+            <div class="second-img2">
+                <img src="img/image copy 7.png" alt="">
+            </div>
+        </div>
+        <div class="enrich">
+            <div class="third-img3">
+                <img src="img/image copy 8.png" alt="">
+            </div>
+            <div class="your-enrich">
+                <h2>Enrich your designs with <br>
+                tailored content</h2>
+                <p>
+               Make your designs stand out with world-class photos, <br>
+            graphics, videos, audio, fonts, charts, and more. <br>
+            Explore our vast content libraries featuring top brands <br>
+             like Disney, Artlist, and pocstock.</p>
+             <a href="#"><button>Start designing</button></a>
+            </div>
+        </div>
+        <div class="with-others">
+            <div class="design-with">
+                <h2>Design with others</h2>
+                <p>
+                  Invite friends and family to design with you, or set <br>
+                your whole team up to work together. Our <br>
+                 collaboration features let you comment and work in <br>
+                real-time on <span><a href="#">Presentations, Whiteboards, Docs, <br>
+                Videos, </a></span> or that birthday party planning.</p>
+            </div>
+            <div class="fourth-img4">
+                <img src="img/Burger Social Media Post Design.jpg" alt="">
+            </div>
+        </div>
+        <div class="the-plan">
+            <div class="get-down">
+                   <h2>
+              The plan that gets down to business</h2>
+              <p>Empower everyone to design together with Canva Teams</p>
+            </div>
+            <div class="kemi">
+                <div class="fifth-img5">
+                    <img src="img/image copy 9.png" alt="">
+                </div>
+                <div class="ai-efficiency">
+                    <div class="ai-powered">
+                        <h3>AI-powered efficiency</h3>
+                        <p>Leverage AI to create on-brand copy, templates and video-editing.</p>
+                    </div>
+                    <div class="your-brand">
+                        <div class="bring-your">
+                            <h3>Bring your brand in house</h3>
+                            <p>Set up Brand Kits and templates for your team to design with.</p>
+                        </div>
+                    </div>
+                    <div class="beautiful-approval">
+                        <div class="approval-flow">
+                            <h3>Beautiful approval flows</h3>
+                            <p>Easily control individual permissions, assign tasks and share your work.</p>
+                        </div>
+                    </div>
+                    <div class="third-button">
+                       <a href="#"><button>Explore Canva Teams
+                         </button></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trusted-by">
+            <div class="by-95">
+                 <h3>Trusted by 95% of the Fortune 500</h3>
+            </div>
+            <div class="slider1">
+                   <div class="slide-track1">
+                <img src="img/image copy 10.png" width="90px" alt="">
+                <img src="img/image copy 11.png" width="90px" alt="">
+                <img src="img/image copy 12.png" width="90px" alt="">
+                <img src="img/image copy 13.png" width="90px" alt="">
+                <img src="img/image copy 14.png" width="90px" alt="">
+                <img src="img/image copy 15.png" width="90px" alt="">
+                <img src="img/image copy 16.png" width="90px" alt="">
+                <img src="img/image copy 17.png" width="90px" alt="">
+                <img src="img/image copy 10.png" width="90px" alt="">
+                <img src="img/image copy 11.png" width="90px" alt="">
+                <img src="img/image copy 12.png" width="90px" alt="">
+                <img src="img/image copy 13.png" width="90px" alt="">
+                <img src="img/image copy 14.png" width="90px" alt="">
+                <img src="img/image copy 15.png" width="90px" alt="">
+                <img src="img/image copy 16.png" width="90px" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="with-canva">
+            <div class="designing-with1">
+                <h2>Start designing with</h2>
+               <img src="img/image copy 21.png" alt="">
+            </div>
+            <div class="nineth-btn">
+                <a href="#"><button>Get started for free</button></a>
+            </div>
+        </div>
+        <div class="tenth-img10">
+            <div class="second-canva">
+                <img src="img/Canva logo.svg" alt="">
+            </div>
+              <footer class="footer-class">
+                  <div class="download-can">
+                    <div class="download">
+                        <h3>Download canva for free</h3>
+                        <div class="second-btn3">
+                            <a href="#"><button class="win-btn">Windows</button></a>
+                            <a href="#"><button class="mac-btn">Mac</button></a>
+                        </div>
+                    </div>
+                    <div class="product">
+                       <p id="product-toggle" class="menu-toggle" aria-expanded="false">Product</p>
+                       <ul class="ul">
+                        <a href="#"><li>Latest lauches</li></a>
+                        <a href="#"><li>Visual Suite</li></a>
+                        <a href="#"><li>Magic Studio</li></a>
+                        <a href="#"><li>Broad Management</li></a>
+                        <a href="#"><li>Social Media</li></a>
+                        <a href="#"><li>Features</li></a>
+                        <a href="#"><li>Print</li></a>
+                        <a href="#"><li>App Markeplace</li></a>
+                       </ul> 
+                       <div class="plans">
+                        <div class="p">
+                             <p>Plans</p>
+                        </div>
+                        <ul class="ul-class">
+                            <a href="#"><li>Pricing</li></a>
+                            <a href="#"><li>Free</li></a>
+                            <a href="#"><li>Pro</li></a>
+                            <a href="#"><li>Teams</li></a>
+                            <a href="#"><li>Enterprise</li></a>
+                            <a href="#"><li>Education</li></a>
+                            <a href="#"><li>Higher Education</li></a>
+                            <a href="#"><li>Non-profits</li></a>
+                            <a href="#"><li>Contact Sales</li></a>
+                        </ul>
+                       </div>
+                    </div>
+                    <div class="about">
+                        <p>About</p>
+                       <ul class="ul-about">
+                         <a href="#"><li>About Canva</li></a>
+                         <a href="#"><li>Newsroom</li></a>
+                         <a href="#"><li>Events</li></a>
+                         <a href="#"><li>Careers</li></a>
+                         <a href="#"><li>Social Inpact</li></a>
+                         <a href="#"><li>Sustainbility</li></a>
+                         <a href="#"><li>Case Studies</li></a>
+                       </ul>
+                       <div class="community">
+                        <p>Community</p>
+                        <ul class="ul-community">
+                               <a href="#"><li>Canva Community</li></a>
+                         <a href="#"><li>Creators</li></a>
+                         <a href="#"><li>Affiliates</li></a>
+                         <a href="#"><li>Canva RepresentsFund</li></a>
+                         <a href="#"><li>Content partners</li></a>
+                         <a href="#"><li>Business partner directory</li></a>
+                         <a href="#"><li>Canva Developers</li></a>
+                        </ul>
+                       </div>
+                       <div class="inspiration">
+                        <p>Inspiration</p>
+                        <ul class="ul-inspiration">
+                            <a href="#"><li>Design Trends</li></a>
+                            <a href="#"><li>Work Kits</li></a>
+                            <a href="#"><li>Design Podcast</li></a>
+                            <a href="#"><li>Learn blog</li></a>
+                            <a href="#"><li>Template library</li></a>
+                            <a href="#"><li>Font paring</li></a>
+                            <a href="#"><li>Color wheel</li></a>
+                            <a href="#"><li>colours</li></a>
+                            <a href="#"><li>Color palette generator</li></a>
+                        </ul>
+                       </div>
+                    </div>
+                  </div>
+              </footer>
+              
+        </div>
+</body>
+
+</html>
