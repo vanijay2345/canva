@@ -1302,7 +1302,9 @@ width: 320px;
   }
   .download-can{
    display: flex;
-   flex-direction: column;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
   }
   .product{
    text-align: center;
