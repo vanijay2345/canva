@@ -919,6 +919,7 @@
    /* margin: 10px; */
    margin-left: 30px;
    border-radius: 20px;
+   width: 400px;
  }
 .nineth-btn{
    display: flex;
